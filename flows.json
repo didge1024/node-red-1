@@ -81,6 +81,11 @@
         "sessionExpiry": ""
     },
     {
+        "id": "2e0e9e2db0b49ffd",
+        "type": "chirpstack-server",
+        "server": "10.8.0.1:8080"
+    },
+    {
         "id": "25001134d7eb452f",
         "type": "mqtt in",
         "z": "5ecc14714ecb48fb",
@@ -142,5 +147,22 @@
         "x": 480,
         "y": 380,
         "wires": []
+    },
+    {
+        "id": "2b457bf4457eeed6",
+        "type": "chirpstack-enqueue",
+        "z": "5ecc14714ecb48fb",
+        "name": "Relay Port",
+        "server": "2e0e9e2db0b49ffd",
+        "devEui": "48e663fffe30085a",
+        "applicationId": "",
+        "fPort": "",
+        "confirmed": true,
+        "debug": false,
+        "x": 430,
+        "y": 140,
+        "wires": [
+            []
+        ]
     }
 ]
